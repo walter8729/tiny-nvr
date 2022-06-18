@@ -7,7 +7,7 @@
 #       rtsp://username:password@address:port//Streaming/Channels/2 \
 #       camera1
 
-FROM alpine:3.8
+FROM alpine:3.16
 
 LABEL version="1.0" \
       maintainer="walter8729"
