@@ -57,8 +57,11 @@ done
 dir="$dir/$dirName"
 mkdir -p "$dir"
 
+# generate mkv or ts extension name, by default is mp4
 if [ $(getLowercase "$VIDEO_FORMAT") == "mkv" ]; then
     fileExtension="mkv"
+elif [ $(getLowercase "$VIDEO_FORMAT") == "ts" ]; then
+    fileExtension="ts"
 fi
 
 # remove old recordings
